@@ -30,6 +30,12 @@ Source: https://twitter.com/Bugcrowd/status/1367346572858695681
 When you find an XSS, at minimum, use alert(document.domain) over alert(1). This helps to demonstrate the context that the JavaScript is executing in. Even better, escalate the XSS to perform an account takeover!
 ```
 
+## prompt(1) -> alert(1) 
+
+```
+When testing for Xss use prompt(1) instead of alert(1) as most of the companies have filters to block "alert" Better chance of Finding an xss just by smple manupulation in codes
+```
+
 ## SSRF -> Password Hashes
 
 Source: https://twitter.com/Bugcrowd/status/1368320520526180355
